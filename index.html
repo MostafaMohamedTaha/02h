@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="mostafa">
+    <meta name="description" content="html course">
+    <link rel="icon" href="html5.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <title>
+        first web page
+    </title>
+</head>
+
+<body>
+    <main>
+        <nav aria-labelledby="primary-navigation">
+            <h2 id="primary-navigation">primary navigation</h2>
+            <ul>
+                <li>
+                    <a href="#html">html section</a>
+                </li>
+                <li>
+                    <a href="#css">css section</a>
+                </li>
+                <li>
+                    <a href="#contact">contact me</a>
+                </li>
+                <li>
+                    <figure><img src="img/02.jpeg" alt="man2" />
+                        <figcaption>man2</figcaption>
+                    </figure>
+                </li>
+                <li><img src="img/03.jpeg" alt="man3" /></li>
+                <li><img src="img/01.jpeg" alt="man1" /></li>
+            </ul>
+        </nav>
+    </main>
+    <br>
+    <aside>
+        <details>3 <summary>guess num</summary>
+        </details>
+    </aside>
+    <section id="html">
+        <h1>hello world!</h1>
+        <h2>ready to learn any thing</h2>
+        <hr>
+        <!-- add new places -->
+        <p>this is my first web page
+            <code>&lt;h1&gt;hello&lt;/h1&gt;</code>
+            <li>...learn <abbr title="hypertext">html</abbr></li>
+            <li>...learn css</li>
+            <li>...learn sass</li>
+            <li>...learn tailwind</li>
+            <li>...learn <em>strap</em> boostrap</li>
+        </p>
+    </section>
+    <section id="css">
+        <h3>my daily working</h3>
+        <hr>
+        <p>working </p>
+        <dl>
+            <dt>north pole</dt>
+            <dt>cold man</dt>
+            <a href="www.google.com">google</a>
+        </dl>
+    </section>
+    <section>
+        <table>
+            <thead>
+                <caption>my daily working</caption>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>time</th>
+                    <th>activity</th>
+                </tr>
+                <tr>
+                    <th scope="row">morning</th>
+                    <td>
+                        <time datetime="08:00">
+                            8 am
+                        </time>-
+                        <time datetime="11:00">
+                            11 am
+                        </time>
+                    </td>
+                    <td>eat launch</td>
+                </tr>
+                <tr>
+                    <th scope="row">afternoon</th>
+                    <td>
+                        <time datetime=12 am>12 am
+                        </time>-
+                        <time datetime=17 am>17 am
+                        </time>
+                    </td>
+                    <td>study other courses</td>
+
+                </tr>
+                <tr>
+                    <th scope="row">evening</th>
+                    <td rowspan="2">
+                        other time</td>
+                    <td>free time</td>
+                </tr>
+                <tr>
+                    <th scope="row">night</th>
+                    <td>sleep</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">
+                        thats what i do every day code eating sleep
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    <section>
+        <article id="contact">
+            <h2>contact me</h2>
+            <p>i'd really like from you </p>
+            <form action="http://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>personal info</legend>
+
+                    <p>
+                        <label for="firstName">first name</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="enter your first name"
+                            autocomplete="on" required autofocus />
+                    </p>
+                    <p>
+                        <label for="lastName">last name</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="enter your last name" required />
+                    </p>
+                    <p>
+                        <label for="password">password</label>
+                        <input type="password" name="password" id="password" placeholder="enter your password"
+                            autocomplete="on" required />
+                    </p>
+                    <p>
+                        <label for="phone">password confirm</label>
+                        <input type="password" name="passwordConfirm" id="passwordConfirm"
+                            placeholder="enter your password confirm" required />
+                    </p>
+                    <p>
+                        <label for="phone">phone</label>
+                        <input type="tel" name="phone" id="phone" placeholder="enter your phone" required
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                    </p>
+                    <p>
+                        <label for="decade">favorite decade</label>
+                        <input type="number" name="decade" id="decade" placeholder="enter your decade" required
+                            min="1950" max="2020" step="10" value="1980">
+                    </p>
+                    <p>
+                        <select name="coffee" id="coffee" multiple size="5">
+                            <optgroup label="coffee">
+                                <option value="regular coffee">
+                                    regular coffee
+                                </option>
+                                <option value="ice coffee">
+                                    ice coffee
+                                </option>
+                            </optgroup>
+                            <optgroup label="espresso">
+                                <option value="latte" selected>
+                                    latte
+                                </option>
+                                <option value="cappucino">
+                                    cappucino
+                                </option>
+                                <option value="cortado">
+                                    cortado
+                                </option>
+                                <option value="americano">
+                                    americano
+                                </option>
+                            </optgroup>
+                            <optgroup label="others">
+                                <option value="others">
+                                    others
+                                </option>
+                            </optgroup>
+                        </select>
+                    </p>
+
+                    <!--  <p>
+                    <label for="coffee">favorite coffee</label>
+                    <input type="text" name="coffee" id="coffee" list="coffee-list">
+                    <datalist id="coffee-list">
+                        <option value="regular">
+                        <option value="ice">
+                        <option value="espresso">
+                        <option value="cappucino">
+                        <option value="cortado">
+                        <option value="americano">
+                        <option value="others">
+                    </datalist>
+                </p> -->
+                </fieldset>
+                <fieldset>
+                    <legend>what is your favorite food </legend>
+                    <p>
+                        <input type="radio" name="food" id="tacos" value="tacos">
+                        <label for="tacos">tacos</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="pizza" value="pizza">
+                        <label for="pizza">pizza</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="others" value="others">
+                        <label for="others">others</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        do you have pets?
+                    </legend>
+                    <p>
+                        <input type="checkbox" name="pets" id="dog" value="dog">
+                        <label for="dog">dog</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="cat" value="cat">
+                        <label for="cat">cat</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="fish" value="fish">
+                        <label for="fish">fish</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="other" value="other">
+                        <label for="other">other</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>send me message</legend>
+                    <label for="message">
+                        your message
+                    </label>
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="10"
+                        placeholder="type your message here"></textarea>
+                    <br>
+                    <!-- <input type="submit" value="submit"> -->
+                    <button type="submit">submit</button>
+                    <button type="reset">reset</button>
+                </fieldset>
+            </form>
+
+        </article>
+    </section>
+    &lt;&lt;&lt;&copy; mostafa taha &gt;&gt;&gt;
+    <a href="#">back to top</a>
+</body>
+
+</html>
